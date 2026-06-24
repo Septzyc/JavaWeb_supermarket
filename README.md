@@ -10,16 +10,19 @@
 
 前后端没分开，页面直接跑在 Tomcat 上，数据库用的 MySQL，前端用了 Vue 3 + Element Plus 做交互。
 
-##快速开始
+## 快速开始
 
 我没有改DBUtil，Loginservlet以及TestDB里的MySQL密码，使用的时候改成你自己的就行。
 
 自己建的数据库命名为supermarket,数据应以这个格式写：INSERT INTO users (username, password, real_name) VALUES
 还有这个：INSERT INTO products (name, category, price, stock, image_url, description) VALUES 
 
-##更新美化
+## 更新美化
 
 交作业用的，很粗糙,如果你还想要美化，以下是文件树结构和文件树中各文件功能：
+
+## 项目目录结构
+```
 supermarket_web/
 │
 ├── pom.xml                                   # Maven 配置文件
@@ -58,3 +61,4 @@ supermarket_web/
 │
 ├── .gitignore                                # Git 忽略文件
 └── supermarket.sql                           # 数据库初始化脚本
+```
